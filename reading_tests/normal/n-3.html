@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>RECODE</title>
+    <link rel="stylesheet" type="text/css" href="n-3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h2 class="logo">RECODE</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html"><img src="pictures/i-home.png"></img>Home</a></li>
+                    <li><a href="../tests.html"><img src="pictures/i-book.png"></img>Reading Tests</a></li>
+                    <li><a href="../../about_us/about.html"><img src="pictures/i-person.png"></img>About Us</a></li>
+                    <li><a href="../../contact_us/contact.html"><img src="pictures/i-form.png"></img>Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="test">
+                <div class="passage">
+                    <h3 class="psg-head">
+                        A Guide to the History of Animation
+                    </h3>
+                    <a href="https://www.masterclass.com/articles/a-guide-to-the-history-of-animation ">
+                        <h5 class="psg-author">
+                            MasterClass
+                        </h5>
+                    </a>
+                    <p class="psg-txt">
+                        The history of animation dates back to the ancient world. From the pottery of the ancient Greeks to the ocular toys of the seventeenth century to the computer-generated imagery (CGI) of the twenty-first century, animation has existed in many forms, evolving into the technological feat we see today. <br> <br> 
+
+                        The magic lantern was an image projection device developed in 1603. This device used a mirror in the back of a light source (originally a candle) that would direct the light through long glass slides, projecting the slide's illustrations. Placing the slides together formed movement, making the magic lantern the first instance of “moving pictures.” <br> <br> 
+
+                        The thaumatrope was a nineteenth-century optical toy that featured a picture disk held by two strings. When the strings were twirled, they would spin the disk, moving images on either side of the disk into one by the “persistence of vision,” an optical illusion that tricks the eye into seeing movement long after the movement has stopped.<br> <br> 
+
+                        Phenakistoscope also known as the Fantascope, and sometimes spelled “phenakistiscope,” the phenakistoscope debuted around 1833, featuring spinning, painted cardboard disks reflected in mirrors, which created the illusion of movement. The phenakistoscope's innovative experience could only be enjoyed by one viewer at a time.<br> <br> 
+
+                        The phenakistoscope's successor, the zoetrope was a spinning cylindrical version that presented images in sequential phases of motion that multiple viewers could watch at a time. The cylinder contained several vertical slits, which provided a mechanism for the eye to keep the spinning photographs from blurring together while in motion.<br> <br> 
+
+                        Latin for “moving picture,” the kineograph (known as the flipbook) debuted in 1868. The kineograph is a small book of drawings, with each page conveying a different form of movement, so that when the pages are flipped quickly in sequence, they animate a scene.<br> <br> 
+
+                        In 1877, the praxinoscope succeeded the zoetrope, replacing the latter's narrow vertical slits with an inner circle of angled mirrors instead. These angled mirrors helped provide a clearer and more vivid animation than peering at the moving illustrations through slits.<br> <br> 
+
+                    </p>
+                </div>
+                <div class="question" id="quiz">
+                    <h3 id="qst">Question is loading...</h3>
+                    <ul>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="a" class="answer" />
+                                <label for="a" id="a_text">Answer...</label>
+                                
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="b" class="answer" />
+                                <label for="b" id="b_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="c" class="answer" />
+                                <label for="c" id="c_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="d" class="answer" />
+                                <label for="d" id="d_text">Answer...</label>
+                            </li>
+                        </ul>
+                    <button id="next" class="next">next</button>
+                    <button id="submit" class="submit">submit</button>
+                    <div class = "expl" id = "explanation">loading...</div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="n-3.js"></script>
+
+
+</body>
+</html>

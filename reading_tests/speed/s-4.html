@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>RECODE</title>
+    <link rel="stylesheet" type="text/css" href="s-4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h2 class="logo">RECODE</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html"><img src="pictures/i-home.png"></img>Home</a></li>
+                    <li><a href="../tests.html"><img src="pictures/i-book.png"></img>Reading Tests</a></li>
+                    <li><a href="../../about_us/about.html"><img src="pictures/i-person.png"></img>About Us</a></li>
+                    <li><a href="../../contact_us/contact.html"><img src="pictures/i-form.png"></img>Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="container">
+           
+            <div class="test">
+                <div class="passage"> 
+                    <div class="timer_cont">
+                        <div class="timer">
+                            <div class="time_left_txt">Time Left</div>
+                            <div class="timer_sec" id="timer">1:00</div>
+                        </div>
+                    </div>
+                    <h3 class="psg-head">
+                        History of Computers
+                    </h3>
+                    <a href="https://www.eslprintables.com/vocabulary_worksheets/technologies/computers/history_of_computer_916840/ ">
+                        <h5 class="psg-author">
+                            ESLprintables
+                        </h5>
+                    </a>
+                    <p class="psg-txt">
+                        When you are using a computer, think about the technology that is needed for it to work. People have been using types of computers thousands of years. A metal machine was found on the seabed in Greece that was more than 2,000 years old. It is believed that this was the first ever computer. <br> <br>
+
+                        In the 1940s, technology had developed enough for inventors to make the first generation of modern computers. One such model was so large that it needed a room that was 167 square meters to accommodate it. During that decade, scientists in England developed the first computer program. It took 25 minutes to complete one calculation. In 1958 CE, the computer chip was developed.  <br> <br>
+
+                        The first computer game was produced in 1962 CE, followed two years later by the computer mouse. In 1971 CE, the floppy disk was invented, which meant that information could be shared between computers. The first PC (personal computer) was produced in 1974 CE, so people could buy computers to use at home. <br> <br>
+
+                        In 1983 CE, people could buy a laptop for the first time. Then, in 1990 CE, the British scientist Tim Berners Lee developed the World Wide Web. It was not until 2007 CE that the first smart phones appeared. Today, most people use their mobile phones every day. <br> <br>
+
+                        What will happen in the future? You can already buy watches which can do the same as mobile phones. Scientists have also developed glasses that are capable of doing even more than this. Life in the future is going to see further changes in computer technology. It is likely that all aspects of everyday life will rely on a computer program, from how we travel to home our homes are heated.
+                    </p>
+                </div>
+                <div class="question" id="quiz">
+                    <h3 id="qst">Question is loading...</h3>
+                    <ul>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="a" class="answer" />
+                                <label for="a" id="a_text">Answer...</label>
+                                
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="b" class="answer" />
+                                <label for="b" id="b_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="c" class="answer" />
+                                <label for="c" id="c_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="d" class="answer" />
+                                <label for="d" id="d_text">Answer...</label>
+                            </li>
+                        </ul>
+                    <button id="next" class="next">next</button>
+                    <button id="submit" class="submit">submit</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="s-4.js"></script>
+
+
+</body>
+</html>

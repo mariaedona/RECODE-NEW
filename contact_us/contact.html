@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>RECODE</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h2 class="logo">RECODE</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html"><img src="pictures/i-home.png"></img>Home</a></li>
+                    <li><a href="../reading_tests/tests.html"><img src="pictures/i-book.png"></img>Reading Tests</a></li>
+                    <li><a href=""><img src="pictures/i-person.png"></img>About Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="container">
+        <div class="item">
+            <div class="contact">
+                <div class="first-text">Let's Get in Touch</div>
+                <img src="working_pic.png" class="image" alt="">
+            </div>
+            <div class="submit-form">
+                <h4 class="third-text text">Contact Us</h4>
+                <form action="https://formspree.io/f/mnqylwyp" method="post">
+                    <div class="input-box">
+                        <input type="text" class="input" name="Name" required>
+                        <label for="">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input" name="Email "required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" class="input" name="Phone" required>
+                        <label for="">Phone</label>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="Message" class="input" required></textarea>
+                        <label for="">Message</label>
+                    </div>
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

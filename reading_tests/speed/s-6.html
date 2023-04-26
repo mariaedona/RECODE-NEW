@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>RECODE</title>
+    <link rel="stylesheet" type="text/css" href="s-6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h2 class="logo">RECODE</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html"><img src="pictures/i-home.png"></img>Home</a></li>
+                    <li><a href="../tests.html"><img src="pictures/i-book.png"></img>Reading Tests</a></li>
+                    <li><a href="../../about_us/about.html"><img src="pictures/i-person.png"></img>About Us</a></li>
+                    <li><a href="../../contact_us/contact.html"><img src="pictures/i-form.png"></img>Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="container">
+           
+            <div class="test">
+                <div class="passage"> 
+                    <div class="timer_cont">
+                        <div class="timer">
+                            <div class="time_left_txt">Time Left</div>
+                            <div class="timer_sec" id="timer">1:00</div>
+                        </div>
+                    </div>
+                    <h3 class="psg-head">
+                        Data Privacy
+                    </h3>
+                    <a href="https://incogniton.com/top-data-privacy-issues/">
+                        <h5 class="psg-author">
+                            Paul Cawthon
+                        </h5>
+                    </a>
+                    <p class="psg-txt">
+                        Data privacy issues are becoming increasingly prevalent in today's digital world, as more and more individuals and organizations are becoming victims of data breaches, cyber attacks, and other security threats. This can lead to sensitive information being leaked, stolen, or misused, resulting in significant financial and reputational damage. <br> <br>
+                        Some of the top data privacy issues that individuals and organizations face include: <br> <br>
+                        1.	Cybersecurity threats: Hackers and cybercriminals are constantly developing new methods to gain unauthorized access to personal and sensitive information. This can include phishing attacks, malware, ransomware, and other types of cyber threats. <br> <br>
+                        2.	Data breaches: A data breach occurs when unauthorized parties gain access to confidential information, either by hacking into computer systems or stealing physical data storage devices. Data breaches can result in the loss of personal information, including names, addresses, Social Security numbers, and financial information.  <br> <br>
+                        3.	Lack of data protection regulations: Many countries lack robust data protection laws or fail to enforce existing regulations, leaving individuals and organizations vulnerable to data breaches and other privacy violations. <br> <br>
+
+                        Solution: To address the data privacy issues mentioned above, individuals and organizations can take several proactive measures, including:<br> <br>
+
+                        1.	Regularly updating security measures: This includes installing the latest anti-virus software, using strong passwords, and regularly updating software and firmware to address vulnerabilities.<br> <br>
+                        2.	Implementing encryption: Encryption can be used to secure sensitive information, making it difficult for unauthorized parties to access or steal.<br> <br>
+                        3.	Educating employees and staff: Employees and staff should be educated on the importance of data privacy and security, as well as how to identify and report potential threats.<br> <br>
+                        4.	Compliance with data protection laws: Individuals and organizations should comply with all relevant data protection laws and regulations to ensure that personal and sensitive information is protected.<br> <br>
+                        5.	Using VPNs and anonymous browsing: Individuals and organizations can use virtual private networks (VPNs) and anonymous browsing tools to protect their online activity from prying eyes.
+                    </p>
+                </div>
+                <div class="question" id="quiz">
+                    <h3 id="qst">Question is loading...</h3>
+                    <ul>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="a" class="answer" />
+                                <label for="a" id="a_text">Answer...</label>
+                                
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="b" class="answer" />
+                                <label for="b" id="b_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="c" class="answer" />
+                                <label for="c" id="c_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="d" class="answer" />
+                                <label for="d" id="d_text">Answer...</label>
+                            </li>
+                        </ul>
+                    <button id="next" class="next">next</button>
+                    <button id="submit" class="submit">submit</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="s-6.js"></script>
+
+
+</body>
+</html>

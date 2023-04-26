@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>RECODE</title>
+    <link rel="stylesheet" type="text/css" href="n-1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h2 class="logo">RECODE</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../../index.html"><img src="pictures/i-home.png"></img>Home</a></li>
+                    <li><a href="../tests.html"><img src="pictures/i-book.png"></img>Reading Tests</a></li>
+                    <li><a href="../../about_us/about.html"><img src="pictures/i-person.png"></img>About Us</a></li>
+                    <li><a href="../../contact_us/contact.html"><img src="pictures/i-form.png"></img>Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="test">
+                <div class="passage">
+                    <h3 class="psg-head">
+                        How to create Personal Blog
+                    </h3>
+                    <a href="https://www.slideshare.net/dikhawijanarko/bahan-ajar-bahasa-inggris-procedure-text">
+                        <h5 class="psg-author">
+                            Dikha Danar Wijanarko
+                        </h5>
+                    </a>
+                    <p class="psg-txt">
+                        I. Goal is to Create Personal Blog. <br>
+                        II. Things that you need to Create Personal Blog. <br>
+                        A. Materials <br>
+                    -   Personal Computer/Laptop <br>
+                    -   Internet Connection <br>
+                    -   Modem <br>
+                    -   Blogging Platform
+                    <br> <br>
+                    III. Steps on how to create Personal Blog. <br>
+                    1. Prepare a personal computer/laptop and turn it on. <br> <br>
+                    2. Install the modem into the computer. <br> <br>
+                    3. Connect to internet by using the modem, wait until the internet is connected. <br> <br>
+                    4. Open browser software in the computer. <br> <br>
+                    5. Choose a free blogging platform, you can use any platform of blogging that you want. There are two most popular free blogging platforms (Blogger.com and Wordpress.com).<br> <br>
+                    6. Register for an account and create your blog, you must fill every form with your real identity like name, address, email etc. Make sure that you fill every form correctly. <br> <br>
+                    7. Select your domain, theme and others options, during the registration process for your new blog account, you'll need to choose a domain name and blog theme. <br> <br>
+                    8. Start blogging, once you've completed steps 5-7, you're ready to join the blogosphere and start publishing content on your blog.
+                    </p> <br>
+
+                </div>
+                <div class="question" id="quiz">
+                    <h3 id="qst">Question is loading...</h3>
+                    <ul>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="a" class="answer" />
+                                <label for="a" id="a_text">Answer...</label>
+                                
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="b" class="answer" />
+                                <label for="b" id="b_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="c" class="answer" />
+                                <label for="c" id="c_text">Answer...</label>
+                            </li>
+                            <li class = "ans">
+                                <input type="radio" name="answer" id="d" class="answer" />
+                                <label for="d" id="d_text">Answer...</label>
+                            </li>
+                        </ul>
+                    <button id="next" class="next">next</button>
+                    <button id="submit" class="submit">submit</button>
+                    <div class = "expl" id = "explanation">loading...</div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="n-1.js"></script>
+
+
+</body>
+</html>
